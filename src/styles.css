@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@layer bootstrap, primeng;
+@import "bootstrap/scss/bootstrap.scss" layer(bootstrap);
+@import "primeng/resources/themes/aura-light-blue/theme.css";
+@import "primeng/resources/primeng.min.css";
+@import "primeicons/primeicons.css";
+
+
+  .placeholder {
+    position: relative;
+    pointer-events: none;
+  }
+  .placeholder::before, .placeholder::after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .placeholder::before {
+    background: #adabab none repeat scroll 0 0;
+    border-radius: 3px;
+    height: 100%;
+  }
+  .placeholder::after {
+    font-size: 49px;
+    opacity: 0.25;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FontAwesome";
+  }
+  .placeholder.image::after {
+    content: "\f03e";
+  }

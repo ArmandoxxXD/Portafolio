@@ -1,0 +1,8 @@
+<p-menu [model]="items">
+    <ng-template pTemplate="item" let-item>
+            <div>
+                <i [class]="item.icon" style="font-size: 6.5rem"></i>
+                <span> {{ item.label }}</span>
+            </div>
+    </ng-template>
+</p-menu>
