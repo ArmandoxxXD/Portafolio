@@ -1,37 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, PrimeIcons } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
-
+import { TabMenuModule } from 'primeng/tabmenu';
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
-    MenuModule
+    TabMenuModule
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
 export class MenuComponent implements OnInit{
   items: MenuItem[] | undefined;
-    
-    ngOnInit() {
-      this.items = [
+  activeItem: MenuItem | undefined;
+
+ngOnInit() {
+    this.items = [
         {
-            label: '¿Quien soy?',
-            icon: PrimeIcons.USER,
+          label: '¿Quien soy?',
+          icon: PrimeIcons.USER,
         },
         {
-            label: 'Expericencia',
-            icon: PrimeIcons.FILE
+          label: 'Experiencia',
+          icon: PrimeIcons.FILE,
         },
         {
           label: 'Proyectos',
-          icon: PrimeIcons.BRIEFCASE
+          icon: PrimeIcons.BRIEFCASE,
+          routerLink: 'payment'
         },
         {
           label: 'Contacto',
-          icon: PrimeIcons.BOOK
-      }
+          icon: PrimeIcons.BOOK,
+          routerLink: 'confirmation'
+        }
     ];
+    this.activeItem = this.items[0];
 }
 }
