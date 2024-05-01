@@ -1,3 +1,11 @@
-.panel{
+:host ::ng-deep .card-info{
+background-color: #f1f5f9;
+}
+
+:host ::ng-deep .card-icon{
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
     align-items: center;
+    justify-content: center; 
 }
