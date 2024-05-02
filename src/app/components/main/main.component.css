@@ -1,6 +1,44 @@
 .mx-custom {
     margin-right: 6.25rem;
     margin-left: 6.25rem;
-    margin-top: 4.25rem;
+    margin-top: 2.25rem;
     margin-bottom: 2.25rem;
+}
+
+@media (max-width: 1320px) {
+    .mx-custom {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .grid-cols-10 {
+        gap: 1;
+        margin-bottom: 0.5rem;
+    }
+
+    .flex-center {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+   
+    .grid-cols-10 {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+        gap: 0;
+    }
+
+    .grid-cols-10 > * {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .content, .about-me {
+        width: 37.5rem;
+    }
 }

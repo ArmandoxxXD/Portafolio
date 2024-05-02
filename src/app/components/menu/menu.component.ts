@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, PrimeIcons } from 'primeng/api';
 import { TabMenuModule } from 'primeng/tabmenu';
+import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
-    TabMenuModule
+    TabMenuModule,
+    ButtonModule
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
@@ -19,20 +21,22 @@ ngOnInit() {
         {
           label: '¿Quien soy?',
           icon: PrimeIcons.USER,
+          routerLink: 'about-me'
         },
         {
           label: 'Experiencia',
           icon: PrimeIcons.FILE,
+          routerLink: 'experience'
         },
         {
           label: 'Proyectos',
           icon: PrimeIcons.BRIEFCASE,
-          routerLink: 'payment'
+          routerLink: 'projects'
         },
         {
           label: 'Contacto',
           icon: PrimeIcons.BOOK,
-          routerLink: 'confirmation'
+          routerLink: 'contact'
         }
     ];
     this.activeItem = this.items[0];
