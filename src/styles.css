@@ -1,20 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@layer tailwind-base ,primeng ,tailwind-utilities, style;
-@import "primeng/resources/themes/aura-light-blue/theme.css";
-/* @import "primeng/resources/themes/aura-dark-blue/theme.css"; */
-@import "primeng/resources/primeng.min.css";
-@import "primeicons/primeicons.css";
-
-@layer tailwind-base {
-  @tailwind base;
-}
-
-@layer tailwind-utilities {
-  @tailwind components;
-  @tailwind utilities;
-}
-
-  .placeholder {
+ /* .placeholder {
     position: relative;
     pointer-events: none;
   }
@@ -41,7 +26,7 @@
   }
   .placeholder.image::after {
     content: "\f03e";
-  }
+  } */
 
   body {
     background-image: url(assets/img/913320_OBSK770.jpg);
@@ -51,5 +36,5 @@
   }
 
   html {
-    font-size: 80%;
+    font-size: 90%;
 }

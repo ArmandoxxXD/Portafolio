@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, PrimeIcons } from 'primeng/api';
 import { TabMenuModule } from 'primeng/tabmenu';
-import { ButtonModule } from 'primeng/button';
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [
-    TabMenuModule,
-    ButtonModule
+    TabMenuModule
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
@@ -19,7 +17,7 @@ export class MenuComponent implements OnInit{
 ngOnInit() {
     this.items = [
         {
-          label: '¿Quien soy?',
+          label: '¿Quien es?',
           icon: PrimeIcons.USER,
           routerLink: 'about-me'
         },

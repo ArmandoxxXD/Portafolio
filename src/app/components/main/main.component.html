@@ -1,15 +1,32 @@
 <div class="mx-custom grid grid-cols-10 gap-10">
-    <div class="col-span-4">
-    </div>
-    <div class="content col-span-5">
-        <app-menu></app-menu>
+    <div class="col-start-10">
+        <p-button icon="pi pi-cog" [rounded]="true" (click)="showConfigDialog()"></p-button>
     </div>
 </div>
 <div class="mx-custom grid grid-cols-10 gap-10">
         <div class="about-me col-span-3">
             <app-information></app-information>
         </div>
-        <div class="content col-span-7">
+        <div class="content col-span-7 relative flex justify-center">
+            <app-menu class="absolute -top-20 md:-top-20"></app-menu>
             <router-outlet />
         </div>
  </div>
+
+ <p-dialog header="Opciones" [(visible)]="configDialogVisible" [modal]="true" [style]="{width: '350px'}" [draggable]="false" [resizable]="false">
+    <div class="config-dialog p-3 flex flex-col justify-center items-center">
+      <div class="form-group mb-4">
+        <label (click)="toggleNotifications()" class="config-label flex items-center">
+          <i class="fa-solid fa-2x" [ngClass]="{'fa-sun': darkModeEnabled, 'fa-moon': !darkModeEnabled, 'text-success': darkModeEnabled, 'text-muted': !darkModeEnabled}"></i>
+          <span class="ms-2">{{ darkModeEnabled ? 'Tema Claro' : 'Tema Oscuro' }}</span>
+        </label>
+      </div>
+  
+      <div class="form-group">
+        <label (click)="toggleTwoAuthFactor()" class="config-label flex items-center">
+          <i class="fa-solid fa-2x fa-globe" ></i>
+          <span class="ms-2">{{ englishLanguageEnabled ? 'Español' : 'Ingles' }}</span>
+        </label>
+      </div>
+    </div>
+  </p-dialog>

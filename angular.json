@@ -25,6 +25,16 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "src/themes/aura-light-blue.css",
+                "bundleName": "aura-light-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/aura-dark-blue.css",
+                "bundleName": "aura-dark-blue",
+                "inject": false
+              },
               "src/styles.css"
             ],
             "scripts": [
@@ -90,6 +100,16 @@
               "src/assets"
             ],
             "styles": [
+              {
+                "input": "src/themes/aura-light-blue.css",
+                "bundleName": "aura-light-blue",
+                "inject": false
+              },
+              {
+                "input": "src/themes/aura-dark-blue.css",
+                "bundleName": "aura-dark-blue",
+                "inject": false
+              },
               "src/styles.css"
             ],
             "scripts": [
