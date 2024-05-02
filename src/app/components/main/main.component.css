@@ -24,7 +24,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
    
     .grid-cols-10 {
         grid-template-columns: repeat(1, minmax(0, 1fr)); 

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @layer tailwind-base ,primeng ,tailwind-utilities, style;
 @import "primeng/resources/themes/aura-light-blue/theme.css";
+/* @import "primeng/resources/themes/aura-dark-blue/theme.css"; */
 @import "primeng/resources/primeng.min.css";
 @import "primeicons/primeicons.css";
 
@@ -48,3 +49,7 @@
     background-attachment: fixed;
     background-size: cover;
   }
+
+  html {
+    font-size: 80%;
+}
