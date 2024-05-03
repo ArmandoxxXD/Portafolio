@@ -1,0 +1,15 @@
+:host ::ng-deep .card1{
+    background-color: var(--surface-200);
+}
+
+:host ::ng-deep .card2{
+    background-color: var(--surface-100);
+}
+
+:host ::ng-deep .card3{
+    background-color: var(--surface-100);
+}
+
+:host ::ng-deep .card4{
+    background-color: var(--surface-200);
+}

@@ -12,6 +12,7 @@
             <router-outlet />
         </div>
  </div>
+ <p-scrollTop [threshold]="100" styleClass="custom-scrolltop" icon="pi pi-arrow-up"></p-scrollTop>
 
  <p-dialog header="Opciones" [(visible)]="configDialogVisible" [modal]="true" [style]="{width: '350px'}" [draggable]="false" [resizable]="false">
     <div class="config-dialog p-3 flex flex-col justify-center items-center">

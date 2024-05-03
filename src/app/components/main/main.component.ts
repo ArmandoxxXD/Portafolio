@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { CommonModule, DOCUMENT } from '@angular/common';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 @Component({
   selector: 'app-main',
@@ -15,7 +16,8 @@ import { CommonModule, DOCUMENT } from '@angular/common';
     RouterOutlet,
     ButtonModule,
     DialogModule,
-    CommonModule
+    CommonModule,
+    ScrollTopModule
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'

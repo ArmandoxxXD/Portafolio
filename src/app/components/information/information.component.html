@@ -3,7 +3,7 @@
         <p-image src="https://media.licdn.com/dms/image/D4E03AQHUcwAip-1eXg/profile-displayphoto-shrink_800_800/0/1708408031601?e=1720051200&v=beta&t=n15FAVuR3s-QE3ahFCtbLjlH22VELzW8GBCHyof3uZc" class="w-48 h-48 md:w-48 md:h-48" [preview]="true"></p-image>
     </div>
     <div class="relative -top-20 md:-top-20 mt-2 md:mt-4">
-        <h1 class="text-lg">José Armando Gutiérrez Rodríguez</h1>
+        <h1 class="text-lg font-bold">José Armando Gutiérrez Rodríguez</h1>
         <p class="text-sm">Desarrollador Web Full Stack</p>
         <div class="card flex justify-center align-items-center gap-2 flex-wrap mt-1 md:mt-2">
             <p-chip icon="pi pi-linkedin"></p-chip>
@@ -54,7 +54,7 @@
                 </div>
             </p-card>
             <div class="mt-2 md:mt-4 card flex justify-center align-items-center">
-                <p-button icon="pi pi-download" label="Descargar CV"></p-button>
+                <p-button icon="pi pi-download" label="Descargar CV" (click)="descargarCV()"></p-button>
             </div>
         </div>
     </div>
