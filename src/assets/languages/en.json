@@ -1,0 +1,14 @@
+{
+    "MENU": {
+        "ABOUT_ME": "Who is it?",
+        "EXPERIENCE": "Resume",
+        "PROJECTS": "Projects",
+        "CONTACT": "Contact"
+    },
+
+    "informationDescription": "Full Stack Web Developer",
+    "informationSection1Label": "Phone",
+    "informationSection3Label":"Location",
+    "informationSection4Label":"Birthday",
+    "informationButtonLabel": "Download CV"
+}

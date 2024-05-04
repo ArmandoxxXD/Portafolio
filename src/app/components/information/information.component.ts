@@ -5,6 +5,7 @@ import { ChipModule } from 'primeng/chip';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { ButtonModule } from 'primeng/button';
+import { TranlateModule } from '../../module/tranlate/tranlate.module';
 
 @Component({
   selector: 'app-information',
@@ -15,7 +16,8 @@ import { ButtonModule } from 'primeng/button';
     ChipModule,
     CardModule,
     DividerModule,
-    ButtonModule
+    ButtonModule,
+    TranlateModule
   ],
   templateUrl: './information.component.html',
   styleUrl: './information.component.css'

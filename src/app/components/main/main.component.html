@@ -17,14 +17,14 @@
  <p-dialog header="Opciones" [(visible)]="configDialogVisible" [modal]="true" [style]="{width: '350px'}" [draggable]="false" [resizable]="false">
     <div class="config-dialog p-3 flex flex-col justify-center items-center">
       <div class="form-group mb-4">
-        <label (click)="toggleNotifications()" class="config-label flex items-center">
+        <label (click)="toggleThemes()" class="config-label flex items-center">
           <i class="fa-solid fa-2x" [ngClass]="{'fa-sun': darkModeEnabled, 'fa-moon': !darkModeEnabled, 'text-success': darkModeEnabled, 'text-muted': !darkModeEnabled}"></i>
           <span class="ms-2">{{ darkModeEnabled ? 'Tema Claro' : 'Tema Oscuro' }}</span>
         </label>
       </div>
   
       <div class="form-group">
-        <label (click)="toggleTwoAuthFactor()" class="config-label flex items-center">
+        <label (click)="toggleLanguages()" class="config-label flex items-center">
           <i class="fa-solid fa-2x fa-globe" ></i>
           <span class="ms-2">{{ englishLanguageEnabled ? 'Español' : 'Ingles' }}</span>
         </label>

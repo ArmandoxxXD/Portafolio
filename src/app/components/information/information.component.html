@@ -4,7 +4,7 @@
     </div>
     <div class="relative -top-20 md:-top-20 mt-2 md:mt-4">
         <h1 class="text-lg font-bold">José Armando Gutiérrez Rodríguez</h1>
-        <p class="text-sm">Desarrollador Web Full Stack</p>
+        <p class="text-sm">{{ 'informationDescription' | translate}}</p>
         <div class="card flex justify-center align-items-center gap-2 flex-wrap mt-1 md:mt-2">
             <p-chip icon="pi pi-linkedin"></p-chip>
             <p-chip icon="pi pi-github"></p-chip>
@@ -18,7 +18,7 @@
                         <i class="pi pi-phone"></i> 
                     </p-card>
                     <div>
-                        <p class="text-xs">Telefono</p>
+                        <p class="text-xs">{{ 'informationSection1Label' | translate}}</p>
                         <p>+52 418 152 2619</p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                         <i class="pi pi-map-marker"></i> 
                     </p-card>
                     <div>
-                        <p class="text-xs">Ubicación</p>
+                        <p class="text-xs">{{ 'informationSection3Label' | translate}}</p>
                         <p>Guanajuato, Mexico</p>
                     </div>
                 </div>
@@ -48,13 +48,13 @@
                         <i class="pi pi-calendar"></i> 
                     </p-card>
                     <div>
-                        <p class="text-xs">Cumpleaños</p>
+                        <p class="text-xs">{{ 'informationSection4Label' | translate}}</p>
                         <p>19/09/2003</p>
                     </div>
                 </div>
             </p-card>
             <div class="mt-2 md:mt-4 card flex justify-center align-items-center">
-                <p-button icon="pi pi-download" label="Descargar CV" (click)="descargarCV()"></p-button>
+                <p-button icon="pi pi-download" label="{{'informationButtonLabel' | translate}}" (click)="descargarCV()"></p-button>
             </div>
         </div>
     </div>
