@@ -17,15 +17,15 @@ export class MenuComponent implements OnInit{
   activeItem: MenuItem | undefined;
 
   constructor(private translate: TranslateService) {}
-  
-  ngOnInit() {
+
+  ngOnInit(): void {
     this.translate.onLangChange.subscribe(() => {
       this.loadMenuItems();
     });
     this.loadMenuItems();
   }
 
-  loadMenuItems() {
+  loadMenuItems(): void {
     this.translate.get('MENU').subscribe((menuTranslations) => {
       this.items = [
         {

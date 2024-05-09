@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { PanelModule } from 'primeng/panel';
-import { SplitterModule } from 'primeng/splitter';
 import { CardModule } from 'primeng/card';
 import { AccordionModule } from 'primeng/accordion';
 
@@ -9,13 +8,10 @@ import { AccordionModule } from 'primeng/accordion';
   standalone: true,
   imports: [
     PanelModule,
-    SplitterModule,
     CardModule,
     AccordionModule
   ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css'
 })
-export class AboutMeComponent {
-
-}
+export class AboutMeComponent{}

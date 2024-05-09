@@ -28,10 +28,9 @@ export class InformationComponent {
 
   }
 
-  descargarCV() {
+  descargarCV(): void {
     const fileName = 'Currículum Vitae.pdf';
     const filePath = `/assets/docs/${fileName}`;
-    
     const link = document.createElement('a');
     link.href = filePath;
     link.download = fileName;
