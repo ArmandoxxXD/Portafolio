@@ -42,11 +42,6 @@ export class MenuComponent implements OnInit{
           label: menuTranslations.PROJECTS,
           icon: PrimeIcons.BRIEFCASE,
           routerLink: 'projects'
-        },
-        {
-          label: menuTranslations.CONTACT,
-          icon: PrimeIcons.BOOK,
-          routerLink: 'contact'
         }
       ];
       this.activeItem = this.items[0];

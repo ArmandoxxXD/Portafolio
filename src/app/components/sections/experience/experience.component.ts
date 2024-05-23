@@ -5,15 +5,8 @@ import { TranlateModule } from '../../../module/tranlate/tranlate.module';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { ImageModule } from 'primeng/image';
-
-interface EventItem {
-  status?: string;
-  date?: string;
-  icon?: string;
-  color?: string;
-  image?: string;
-}
-
+import { ChipModule } from 'primeng/chip';
+import { DividerModule } from 'primeng/divider';
 @Component({
   selector: 'app-experience',
   standalone: true,
@@ -23,19 +16,21 @@ interface EventItem {
     TimelineModule,
     CardModule,
     ButtonModule,
-    ImageModule
+    ImageModule,
+    ChipModule,
+    DividerModule
   ],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
 export class ExperienceComponent {
-  events: EventItem[];
+  databases = [
+    { icon: 'devicon-postgresql-plain', name: 'PostgreSQL' },
+    { icon: 'devicon-mysql-plain', name: 'MySQL' },
+    { icon: 'devicon-microsoftsqlserver-plain', name: 'SQLServer' },
+    { icon: 'devicon-mongodb-plain', name: 'MongoDB' }
+  ];
 
   constructor() {
-      this.events = [
-          { status: 'Ordered', date: '15/10/2020 10:30', icon: 'pi pi-shopping-cart', color: '#9C27B0', image: 'game-controller.jpg' },
-          { status: 'Processing', date: '15/10/2020 14:00', icon: 'pi pi-cog', color: '#673AB7' },
-          { status: 'Shipped', date: '15/10/2020 16:15', icon: 'pi pi-shopping-cart', color: '#FF9800' }
-      ];
   }
 }
